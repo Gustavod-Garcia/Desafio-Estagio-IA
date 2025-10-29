@@ -1,20 +1,19 @@
-# Importa as bibliotecas que vamos usar
-import fitz  # Esta é a biblioteca PyMuPDF
+import fitz  
 import os    # Para interagir com o sistema (encontrar arquivos)
-import json  # Para criar o arquivo JSON
+import json  
 
 # --- Configuração ---
-PASTA_DADOS = "dados"  # O nome da pasta onde estão seus PDFs
-ARQUIVO_SAIDA = "documentos.json" # O nome do arquivo que vamos criar
+PASTA_DADOS = "dados"  
+ARQUIVO_SAIDA = "documentos.json" 
 
 def extrair_texto_pdf(caminho_pdf):
     """
     Objetivo 1: Abre um PDF e extrai todo o texto dele.
     """
     try:
-        doc = fitz.open(caminho_pdf)  # Abre o arquivo
+        doc = fitz.open(caminho_pdf)  
         texto_completo = ""
-        for pagina in doc:  # Passa por cada página
+        for pagina in doc: 
             texto_completo += pagina.get_text() # Adiciona o texto da página
         doc.close()
         return texto_completo
@@ -39,17 +38,17 @@ def classificar_documento(nome_arquivo):
     return "Outro" # Categoria padrão
 
 # --- Script Principal ---
-# Isso só roda quando você executa 'python processar.py'
+
 if __name__ == "__main__":
     
     base_de_dados = [] # Uma lista vazia para guardar nossos dados
     
     print(f"Iniciando processamento da pasta '{PASTA_DADOS}'...")
 
-    # Loop por cada arquivo dentro da pasta PASTA_DADOS
+
     for nome_arquivo in os.listdir(PASTA_DADOS):
         
-        # Só processa arquivos que terminam com .pdf
+        
         if nome_arquivo.endswith(".pdf"):
             
             caminho_completo = os.path.join(PASTA_DADOS, nome_arquivo)
@@ -81,5 +80,3 @@ if __name__ == "__main__":
         json.dump(base_de_dados, f, indent=4, ensure_ascii=False)
 
     print(f"Sucesso! {len(base_de_dados)} documentos foram processados.")
-
-    
