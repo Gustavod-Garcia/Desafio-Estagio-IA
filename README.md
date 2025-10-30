@@ -68,15 +68,16 @@ Este projeto requer o [Ollama](https://ollama.com) para rodar o LLM local.
 
 1. Iniciar o Chat no Terminal (Simples)
 Execute o script chat.py para interagir diretamente no seu terminal.
-Bash
-
+```bash
 python chat.py
+```
 Faça suas perguntas e digite 'sair' para terminar.
 
 2. Iniciar a Interface Gráfica (Streamlit)
 Execute o script app.py para iniciar uma interface web local no seu navegador.
-Bash
-
+```bash
 streamlit run app.py
+```
 O Streamlit abrirá automaticamente o aplicativo no seu navegador.
+
 
