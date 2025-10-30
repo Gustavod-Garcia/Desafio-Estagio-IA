@@ -3,8 +3,8 @@
 Este projeto implementa uma solução de busca e chat RAG (Retrieval-Augmented Generation) para consulta de documentos PDF, conforme especificado no estudo de caso.
 
 A solução oferece duas interfaces para interação:
-1- Um chat direto no terminal (via chat.py).
-2- Uma interface gráfica web (via app.py com Streamlit).
+1. Um chat direto no terminal (via chat.py).
+2. Uma interface gráfica web (via app.py com Streamlit).
 
 ## Objetivos Cumpridos
 
@@ -73,4 +73,5 @@ Faça suas perguntas e digite 'sair' para terminar.
 2. Iniciar a Interface Gráfica (Streamlit)
 Execute o script app.py para iniciar uma interface web local no seu navegador.
 O Streamlit abrirá automaticamente o aplicativo no seu navegador.
+
 
