@@ -2,6 +2,10 @@
 
 Este projeto implementa uma solução de busca e chat RAG (Retrieval-Augmented Generation) para consulta de documentos PDF, conforme especificado no estudo de caso.
 
+A solução oferece duas interfaces para interação:
+1- Um chat direto no terminal (via chat.py).
+2- Uma interface gráfica web (via app.py com Streamlit).
+
 ## Objetivos Cumpridos
 
 * **1. Extração de Texto:** O script `processar.py` usa a biblioteca PyMuPDF para extrair o texto completo de todos os PDFs na pasta `/dados`.
@@ -14,12 +18,13 @@ Este projeto implementa uma solução de busca e chat RAG (Retrieval-Augmented G
 * **Python 3.10+**
 * **Extração PDF:** PyMuPDF (`fitz`)
 * **Busca (Objetivo 3):** Scikit-learn (`TfidfVectorizer`, `cosine_similarity`)
+* **Interface Web:** Streamlit
 * **LLM Local (Objetivo 4):** Ollama
 * **Comunicação LLM:** `ollama` (biblioteca Python)
 
-## [cite_start]Como Executar 
+## Como Executar 
 
-[cite_start]A solução foi desenhada para rodar localmente, sem necessidade de GPU. 
+A solução foi desenhada para rodar localmente, sem necessidade de GPU. 
 
 ### 1. Pré-requisito: Ollama
 
@@ -59,9 +64,13 @@ Este projeto requer o [Ollama](https://ollama.com) para rodar o LLM local.
     python processar.py
     ```
 
-2.  **Iniciar o Chat (Aplicação Principal):**
-    ```bash
-    python chat.py
-    ```
+## Depois de processar, você pode escolher qual interface deseja usar:**
 
-3.  Faça suas perguntas ao chat. Para sair, digite `sair`.
+1. Iniciar o Chat no Terminal (Simples)
+Execute o script chat.py para interagir diretamente no seu terminal.
+Faça suas perguntas e digite 'sair' para terminar.
+
+2. Iniciar a Interface Gráfica (Streamlit)
+Execute o script app.py para iniciar uma interface web local no seu navegador.
+O Streamlit abrirá automaticamente o aplicativo no seu navegador.
+
