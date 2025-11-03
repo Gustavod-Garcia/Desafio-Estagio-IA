@@ -13,6 +13,17 @@ A solução oferece duas interfaces para interação:
 * **3. Busca por Linguagem Natural:** O script `buscar.py` usa `scikit-learn` (TF-IDF) para criar um motor de busca que encontra os documentos mais relevantes para a consulta do usuário.
 * **4. Chat com LLM Local:** O script `chat.py` utiliza o Ollama para rodar um LLM local (`gemma:2b`), que responde perguntas do usuário com base no contexto encontrado pela busca (RAG).
 
+## Galeria do Projeto
+
+Uma prévia das Interfaces do sistema em execução.
+
+| Visão Geral das Interfaces | Interface Gráfica e Chat Terminal |
+| :---: | :---: |
+| ![Visão Geral da Interface Gráfica](img/Capa.png) | ![Resumo da Lei 9394](img/Imagem1.png) |
+| **Definição e Resumo** | **Chat no Terminal** |
+| ![Definição da Resolução 909 e Resumo da Portaria 44](img/Imagem2.png) | ![Execução do Chat no Terminal](img/Terminal.png) |
+
+
 ## Stack de Tecnologias
 
 * **Python 3.10+**
@@ -79,3 +90,4 @@ Execute o script chat.py para interagir diretamente no seu terminal.
 python chat.py
 ```
 Faça suas perguntas e digite 'sair' para terminar.
+
