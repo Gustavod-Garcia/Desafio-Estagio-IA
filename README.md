@@ -17,11 +17,11 @@ A solução oferece duas interfaces para interação:
 
 Uma prévia das Interfaces do sistema em execução.
 
-| Visão Geral das Interfaces | Interface Gráfica e Chat Terminal |
+| Visão Inicial da Interface Gráfica | Resumo da Lei 9394 |
 | :---: | :---: |
-| ![Visão Geral da Interface Gráfica](img/Capa.png) | ![Resumo da Lei 9394](img/Imagem1.png) |
-| **Definição e Resumo** | **Chat no Terminal** |
-| ![Definição da Resolução 909 e Resumo da Portaria 44](img/Imagem2.png) | ![Execução do Chat no Terminal](img/Terminal.png) |
+| ![Visão Inicial da Interface Gráfica](img/Capa.png) | ![Resumo da Lei 9394](img/Imagem1.png) |
+| **Definição da Resolução 909 e Resumo da Portaria 44** | **Visão Inicial do Chat no Terminal** |
+| ![Definição da Resolução 909 e Resumo da Portaria 44](img/Imagem2.png) | ![Visão Inicial do Chat no Terminal](img/Terminal.png) |
 
 
 ## Stack de Tecnologias
@@ -90,4 +90,5 @@ Execute o script chat.py para interagir diretamente no seu terminal.
 python chat.py
 ```
 Faça suas perguntas e digite 'sair' para terminar.
+
 
